@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE UI>
+<ui version="4.0">
+ <class>LoginDialog</class>
+ <widget class="QDialog" name="LoginDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Team Login</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QDialog {
+        background-color: #f0f2f5;
+        font-family: Arial, sans-serif;
+        border-radius: 10px;
+    }
+
+    QLabel {
+        font-size: 13pt;
+        font-weight: bold;
+        color: #333333;
+    }
+
+    QLineEdit {
+        border: 1px solid #cccccc;
+        border-radius: 6px;
+        padding: 6px 8px;
+        background-color: #ffffff;
+        color: #000000; /* ✅ make text visible */
+        selection-background-color: #1976d2;
+        selection-color: #ffffff;
+    }
+
+    QLineEdit:focus {
+        border: 1px solid #1976d2;
+        box-shadow: 0 0 5px rgba(25, 118, 210, 0.4);
+        outline: none;
+    }
+
+    QPushButton {
+        background-color: #1976d2;
+        color: white;
+        font-weight: bold;
+        border-radius: 6px;
+        padding: 10px 15px;
+        font-size: 11pt;
+        border: none;
+    }
+
+    QPushButton:hover {
+        background-color: #0d47a1;
+    }
+
+    QPushButton:pressed {
+        background-color: #125ca3;
+    }
+   </string>
+  </property>
+
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Supervisor / Quality Team Login</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLineEdit" name="usernameEdit">
+     <property name="placeholderText">
+      <string>Username</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLineEdit" name="passwordEdit">
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>Password</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="loginButton">
+     <property name="text">
+      <string>Login</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
